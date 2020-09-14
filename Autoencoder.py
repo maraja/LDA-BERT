@@ -1,4 +1,4 @@
-import keras
+from tensorflow import keras
 from tensorflow.keras.layers import Input, Dense
 from tensorflow.keras.models import Model
 from sklearn.model_selection import train_test_split
