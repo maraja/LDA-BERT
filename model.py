@@ -3,8 +3,8 @@ from sklearn.cluster import KMeans
 from gensim import corpora
 import gensim
 import numpy as np
-from Autoencoder import *
-from preprocess import *
+from .Autoencoder import *
+from .preprocess import *
 from datetime import datetime
 
 
@@ -36,7 +36,7 @@ def preprocess(docs, samp_size=None):
 
 # define model object
 class Topic_Model:
-    def __init__(self, k=10, method='TFIDF'):
+    def __init__(self, k=10, method='LDA_BERT'):
         """
         :param k: number of topics
         :param method: method chosen for the topic model
